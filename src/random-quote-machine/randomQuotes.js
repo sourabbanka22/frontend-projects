@@ -49,7 +49,7 @@ class RandomQuotes extends Component {
                             href={encodeURI('https://twitter.com/intent/tweet?hashtags=quotes,freecodecamp&related=freecodecamp&text="' + quote + ' ~' + author + " ")}
                             className="button"
                             >
-                            <FaTwitter/>
+                            <FaTwitter color="blue"/>
                             </IconButton>
                           </Grid>
                           <Grid item sm >

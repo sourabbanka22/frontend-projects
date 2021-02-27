@@ -5,10 +5,15 @@ import {
 } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store";
-import RandomQuotes from "./random-quote-machine/randomQuotes";
+
 
 import Header from "./header/header"
 import Footer from "./footer/footer"
+import RandomQuotes from "./random-quote-machine/randomQuotes";
+import DrumMachine from "./drum-machine/DrumMachine"
+import Calculator from './calculator/Calculator';
+import Markdown from './markdown-previewer/Markdown';
+import Clock from "./pomodoro-clock/Clock";
 
 function App() {
   return (
@@ -22,16 +27,16 @@ function App() {
               <Home />
             </Route>
             <Route path="/calculator" exact>
-              <Users />
+              <Calculator />
             </Route>
             <Route path="/drum-machine" exact>
-              <Users />
+              <DrumMachine />
             </Route>
             <Route path="/markdown-previewer" exact>
-              <Users />
+              <Markdown />
             </Route>
             <Route path="/pomodoro-clock" exact>
-              <Users />
+              <Clock />
             </Route>
             <Route path="/random-quote-machine" exact>
               <RandomQuotes />
@@ -48,10 +53,6 @@ function App() {
 
 function Home() {
   return <h2>Home</h2>;
-}
-
-function Users(){
-  return <h2>Users</h2>;
 }
 
 export default App;

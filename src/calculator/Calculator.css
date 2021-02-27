@@ -1,0 +1,19 @@
+.containerC {
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.calculator-body {
+    width: 275px;
+    margin: auto;
+    min-height: 400px;
+    border: solid 1px #3A4655;
+    box-shadow: 0 8px 50px -7px black;
+}
+
+.button-row {
+    width: 100%;
+    background: #3C4857;
+}

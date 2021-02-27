@@ -3,7 +3,7 @@ export const NEW_QUOTE = "NEW_QUOTE";
 
 export const fetchQuotes = () => dispatch => {
   fetch(
-    "https://raw.githubusercontent.com/sourabbanka22/random_quote_machine/master/quotes.json"
+    "https://raw.githubusercontent.com/sourabbanka22/frontend-projects/main/src/quotes.json"
   )
     .then(response => {
       if (!response.ok) {

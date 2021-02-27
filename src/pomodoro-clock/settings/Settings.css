@@ -1,0 +1,19 @@
+.Settings {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(10, 175, 230, 1),  0 0 15px rgba(10, 175, 230, 0);
+    
+    padding-top: 1rem;
+    border-top: 3px solid var(--color-theme-lighter);
+  }
+
+  
+  @media (max-width: 600px) {
+    .Settings {
+      grid-column: span 1;
+      margin: 5vh 0;
+      text-align: center;
+    }
+  }
