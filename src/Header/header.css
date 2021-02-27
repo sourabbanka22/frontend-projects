@@ -101,3 +101,7 @@ body {
     overflow-y: auto;
   }
 }
+
+.colorText {
+  color: #5AFF3D
+}

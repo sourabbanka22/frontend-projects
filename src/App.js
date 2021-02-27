@@ -5,8 +5,9 @@ import {
 } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store";
+import { makeStyles } from '@material-ui/core/styles';
 
-
+import Home from "./home/home";
 import Header from "./header/header"
 import Footer from "./footer/footer"
 import RandomQuotes from "./random-quote-machine/randomQuotes";
@@ -15,10 +16,21 @@ import Calculator from './calculator/Calculator';
 import Markdown from './markdown-previewer/Markdown';
 import Clock from "./pomodoro-clock/Clock";
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    minHeight: '100vh',
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/projects.jpg'})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+  },
+}));
+
 function App() {
+  const classes = useStyles();
   return (
     <Provider store={store}>
       <Router>
+        <div className={classes.root}>
         <div className="page-container">
           <div className="content-wrap">
             <Header/>
@@ -46,13 +58,11 @@ function App() {
             <Footer/>
           </div>
         </div>
+        </div>
       </Router>
     </Provider>
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
 
 export default App;

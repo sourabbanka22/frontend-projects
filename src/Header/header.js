@@ -9,7 +9,9 @@ function Header() {
       <input type="checkbox" id="nav-check"/>
       <div className="nav-header">
         <div className="nav-title">
-          <Link to="/">Frontend Projects</Link>
+          <Link to="/">
+              Frontend<span className="colorText">Projects</span>
+          </Link>
         </div>
       </div>
       <div className="nav-links">
@@ -19,7 +21,7 @@ function Header() {
         <Link to="/pomodoro-clock">Pomodoro Clock</Link>
         <Link to="/random-quote-machine">Quote Machine</Link>
         <a href="https://github.com/sourabbanka22/frontend-projects" target="_blank" rel="noreferrer">
-          <FaGithub/>
+          <FaGithub color="#5AFF3D"/>
         </a>
       </div>
     </div>

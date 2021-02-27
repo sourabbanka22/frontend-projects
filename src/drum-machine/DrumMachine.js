@@ -19,7 +19,7 @@ class DrumMachine extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      display: 'Click on any of the DrumPad'
+      display: 'Play the Drums!'
     }
   }
   
@@ -30,7 +30,9 @@ class DrumMachine extends React.Component {
   render(){
     return(
     <div id='drum-machine'>
-        <div id='display'>{this.state.display}</div>
+        <div id='display'>
+          <h3>{this.state.display}</h3>
+        </div>
         <div id='drum-pads'>
           {
             library.map(vocal => (

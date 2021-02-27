@@ -15,7 +15,6 @@ class RandomQuotes extends Component {
   componentDidMount() {
     this.props.fetchQuotes();
     this.getNewQuote();
-    console.log(this.props);
   }
 
   getNewQuote() {
@@ -41,19 +40,21 @@ class RandomQuotes extends Component {
                           </Typography>
                       </CardContent>
                       <CardActions className="actions">
-                        <Grid container sm={12}>
-                          <Grid item sm={10} >
-                          <IconButton
+                        <Grid justify="space-between" container>
+                          <Grid item sm={3} >
+                            <IconButton
                             id="tweet-quote"
                             target="_blank"
                             href={encodeURI('https://twitter.com/intent/tweet?hashtags=quotes,freecodecamp&related=freecodecamp&text="' + quote + ' ~' + author + " ")}
                             className="button"
                             >
-                            <FaTwitter color="blue"/>
+                              <FaTwitter color="blue"/>
                             </IconButton>
                           </Grid>
-                          <Grid item sm >
-                          <Button id="new-quote" size="small" className="button" onClick={this.getNewQuote} color="primary">Next Quote</Button>
+                          <Grid item>
+                            <Button id="new-quote" size="small" className="button" onClick={this.getNewQuote} color="primary">
+                              Next Quote
+                            </Button>
                           </Grid>
                         </Grid>
                       </CardActions>

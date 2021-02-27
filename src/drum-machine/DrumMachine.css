@@ -1,13 +1,14 @@
 
 #drum-machine {
-    background-color: #8651c4;  
+    background-color: transparent;  
 }
 #display {
     height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 70px;
+    font-size: 4.5rem;
+    color: #5AFF3D;
 }
 
 #drum-pads {
