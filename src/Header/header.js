@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {FaGithub} from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
 import './header.css';
 
 function Header() {
