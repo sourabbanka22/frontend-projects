@@ -4,15 +4,9 @@ import "./footer.css";
 function Footer() {
   return (
     <div>
-        <footer className="Footer">
+        <footer className="footer">
             <span>
-                <a
-                className="Footer-link"
-                href="https://github.com/sourabbanka22/drum_machine"
-                rel="noopener noreferrer"
-                >
-                Link to Github Repository
-                </a>
+                © 2020-Present Copyright: Sourab Banka
             </span>
         </footer>
     </div>
